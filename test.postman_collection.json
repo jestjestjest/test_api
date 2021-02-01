@@ -1,0 +1,255 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test",
+		"_postman_id": "56029454-04d0-e728-8382-4ab85cdb7581",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/v1/token",
+			"request": {
+				"url": "http://localhost/api/v1/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "brook.friesen@example.org",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "password",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "kuhn.alvina@example.net",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "noski",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "sdasd",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fileName",
+							"value": "",
+							"description": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": "get token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/v1/refresh",
+			"request": {
+				"url": "http://localhost/api/v1/refresh",
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2FwaVwvdjFcL3Rva2VuIiwiaWF0IjoxNjEyMTI3ODA2LCJleHAiOjE2MTIxMzE0MDYsIm5iZiI6MTYxMjEyNzgwNiwianRpIjoibFVnNElPV0NaM1ozVXJjQSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zuXm4cukJBdwv28MJP0pNeTk3jD0w7H8v0DnX-HjScY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2FwaVwvdjFcL3Rva2VuIiwiaWF0IjoxNjEyMTMwMTc1LCJleHAiOjE2MTIxMzM3NzUsIm5iZiI6MTYxMjEzMDE3NSwianRpIjoiem9hWGJ6aU1sc1hsbHE3YyIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-kp7_rVdCwRTo9L9E1HvntKghV_XQZAdLWEd9KWuCy4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "refresh token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/v1/recipes/2",
+			"request": {
+				"url": "http://localhost/api/v1/recipes/2",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE2MTIxMzAxNzUsImV4cCI6MTYxMjM0OTk1MSwibmJmIjoxNjEyMTMzOTUxLCJqdGkiOiJ4OGttOUZKTWtXVG1DczVJIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.L2H3csqSwNrgPpS8npUhOMHVDdRPROtcYyeDwBEzvvQ",
+						"description": ""
+					},
+					{
+						"key": "secret",
+						"value": "JDKLSAK3KDF",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "_method",
+						"value": "POST",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "asdasd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ingredients",
+							"value": "{\"sdasda\":\"asda\"}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "sdasdasdasd22222",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "POST",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "update receipt"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/v1/users/1/recipes",
+			"request": {
+				"url": "localhost/api/v1/users/1/recipes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get receipt by user id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/v1/recipes",
+			"request": {
+				"url": "localhost/api/v1/recipes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get all receipts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/v1/recipes",
+			"request": {
+				"url": "http://localhost/api/v1/recipes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE2MTIxMzAxNzUsImV4cCI6MTYxMjM0OTk1MSwibmJmIjoxNjEyMTMzOTUxLCJqdGkiOiJ4OGttOUZKTWtXVG1DczVJIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.L2H3csqSwNrgPpS8npUhOMHVDdRPROtcYyeDwBEzvvQ",
+						"description": ""
+					},
+					{
+						"key": "secret",
+						"value": "JDKLSAK3KDF",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "asdasd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ingredients",
+							"value": "{\"sdasda\":\"asda\"}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "sdasdasdasd22222",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "POST",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "add receipt"
+			},
+			"response": []
+		}
+	]
+}
