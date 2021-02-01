@@ -24,8 +24,8 @@ class JwtMiddleware extends BaseMiddleware
         if ($request->header('secret') === env('SECRET_KEY'))
         {
             $user = User::all()->first();
-
             Auth::loginUsingId($user->id);
+
             return $next($request);
         }
 
@@ -40,6 +40,7 @@ class JwtMiddleware extends BaseMiddleware
                 return response()->json(['status' => 'Authorization Token not found']);
             }
         }
+
         return $next($request);
     }
 }
